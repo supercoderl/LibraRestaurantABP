@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DistributedLock.Redis" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Serilog" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.RabbitMQ" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Core" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.DistributedLocking" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.EventBus.RabbitMQ" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.MongoDB" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\services\administration\LibraRestaurant.AdministrationService.EntityFrameworkCore\LibraRestaurant.AdministrationService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.Shared.Hosting.AspNetCore\LibraRestaurant.Shared.Hosting.AspNetCore.csproj" />
+  </ItemGroup>
+
+</Project>

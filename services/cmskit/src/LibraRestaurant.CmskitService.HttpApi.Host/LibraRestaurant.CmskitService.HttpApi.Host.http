@@ -1,0 +1,6 @@
+@LibraRestaurant.CmskitService.HttpApi.Host_HostAddress = http://localhost:5202
+
+GET {{LibraRestaurant.CmskitService.HttpApi.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

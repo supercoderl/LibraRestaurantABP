@@ -1,0 +1,6 @@
+@LibraRestaurant.IdentityService.HttpApi.Host_HostAddress = http://localhost:5048
+
+GET {{LibraRestaurant.IdentityService.HttpApi.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

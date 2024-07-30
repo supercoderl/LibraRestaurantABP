@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Core" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Localization" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraRestaurant.AdministrationService.Application.Contracts\LibraRestaurant.AdministrationService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.AdministrationService.Domain\LibraRestaurant.AdministrationService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

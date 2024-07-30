@@ -1,0 +1,10 @@
+﻿﻿@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+@inject IThemeManager ThemeManager
+@{
+    Layout = ThemeManager.CurrentTheme.GetPublicLayout();
+}
+<div class="logo">
+    <a href="/">
+        <img src="/logo.png" style="height: 2.2rem" />
+    </a>
+</div>

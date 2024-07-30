@@ -1,0 +1,163 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "AbpApi": {
+        "ClusterId": "Administration",
+        "Match": {
+          "Path": "/api/abp/{**catch-all}"
+        }
+      },
+      "EshopOnAbpLocalization": {
+        "ClusterId": "Administration",
+        "Match": {
+          "Path": "/api/abp/application-localization"
+        }
+      },
+      "EshopOnAbpApplicationConfiguration": {
+        "ClusterId": "Administration",
+        "Match": {
+          "Path": "/api/abp/application-configuration"
+        }
+      },
+      "Identity Service": {
+        "ClusterId": "Identity",
+        "Match": {
+          "Path": "/api/identity/{**everything}"
+        }
+      },
+      "Identity Service Swagger": {
+        "ClusterId": "Identity",
+        "Match": {
+          "Path": "/swagger-json/Identity/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/Identity" }
+        ]
+      },
+      "FeatureManagement": {
+        "ClusterId": "feature-management-cluster",
+        "Match": {
+          "Path": "/api/feature-management/{**everything}"
+        }
+      },
+      "PermissionManagement": {
+        "ClusterId": "permission-management-cluster",
+        "Match": {
+          "Path": "/api/permission-management/{**everything}"
+        }
+      },
+      "SettingManagement": {
+        "ClusterId": "setting-management-cluster",
+        "Match": {
+          "Path": "/api/setting-management/{**everything}"
+        }
+      },
+      "Administration Service Swagger": {
+        "ClusterId": "Administration",
+        "Match": {
+          "Path": "/swagger-json/Administration/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/Administration" }
+        ]
+      },
+      "Catalog Service": {
+        "ClusterId": "Catalog",
+        "Match": {
+          "Path": "/api/catalog/{**everything}"
+        }
+      },
+      "Catalog Service Swagger": {
+        "ClusterId": "Catalog",
+        "Match": {
+          "Path": "/swagger-json/Catalog/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/Catalog" }
+        ]
+      },
+      "Ordering Service": {
+        "ClusterId": "Ordering",
+        "Match": {
+          "Path": "/api/ordering/{**everything}"
+        }
+      },
+      "Ordering Service Swagger": {
+        "ClusterId": "Ordering",
+        "Match": {
+          "Path": "/swagger-json/Ordering/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/Ordering" }
+        ]
+      },
+      "Cmskit Service": {
+        "ClusterId": "CmsKit",
+        "Match": {
+          "Path": "/api/cmskit/{**everything}"
+        }
+      },
+      "Cmskit Service Swagger": {
+        "ClusterId": "CmsKit",
+        "Match": {
+          "Path": "/swagger-json/Cmskit/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/Cmskit" }
+        ]
+      }
+    },
+    "Clusters": {
+      "Identity": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44351",
+            "MetaData": {
+              "PublicAddress": "https://identity.librarestaurant.dev"
+            }
+          }
+        }
+      },
+      "Administration": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:7088",
+            "MetaData": {
+              "PublicAddress": "https://administration.librarestaurant.dev"
+            }
+          }
+        }
+      },
+      "Catalog": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44354",
+            "MetaData": {
+              "PublicAddress": "https://catalog.librarestaurant.dev"
+            }
+          }
+        }
+      },
+      "Ordering": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44356",
+            "MetaData": {
+              "PublicAddress": "https://ordering.librarestaurant.dev"
+            }
+          }
+        }
+      },
+      "CmsKit": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44358",
+            "MetaData": {
+              "PublicAddress": "https://cmskit.librarestaurant.dev"
+            }
+          }
+        }
+      }
+    }
+  }
+}

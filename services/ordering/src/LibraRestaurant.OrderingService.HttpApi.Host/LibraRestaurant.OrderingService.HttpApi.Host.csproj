@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shared\LibraRestaurant.Shared.Hosting.AspNetCore\LibraRestaurant.Shared.Hosting.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\LibraRestaurant.Shared.Hosting.Microservices\LibraRestaurant.Shared.Hosting.Microservices.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.OrderingService.Application\LibraRestaurant.OrderingService.Application.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.OrderingService.EntityFrameworkCore\LibraRestaurant.OrderingService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.OrderingService.HttpApi\LibraRestaurant.OrderingService.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>

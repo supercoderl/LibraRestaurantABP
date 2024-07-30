@@ -1,0 +1,17 @@
+﻿@page
+@using LibraRestaurant.Localization
+@using LibraRestaurant.PublicWeb.Components.Basket
+@using Microsoft.Extensions.Localization
+@model LibraRestaurant.PublicWeb.Pages.BasketModel
+
+@section scripts {
+    <abp-script src="/client-proxies/basket-proxy.js"/>
+}
+
+@inject IStringLocalizer<LibraRestaurantResource> L
+
+<div class="row">
+    <div id="BasketArea">
+        @await Component.InvokeAsync(typeof(BasketWidgetViewComponent))
+    </div>
+</div>

@@ -1,0 +1,6 @@
+{
+  "dest": "../../dist/ordering",
+  "lib": {
+    "entryFile": "config/src/public-api.ts"
+  }
+}

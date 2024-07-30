@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.Application", "..\src\LibraRestaurant.CmskitService.Application\LibraRestaurant.CmskitService.Application.csproj", "{7E9E3695-4AD8-4D7C-82AA-C8DB3F9E0AD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.Application.Contracts", "..\src\LibraRestaurant.CmskitService.Application.Contracts\LibraRestaurant.CmskitService.Application.Contracts.csproj", "{4FF06398-5F2F-4EFF-A114-645A8D21CF6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.Domain", "..\src\LibraRestaurant.CmskitService.Domain\LibraRestaurant.CmskitService.Domain.csproj", "{21180D4D-F80A-4512-AA03-889EA3018744}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.Domain.Shared", "..\src\LibraRestaurant.CmskitService.Domain.Shared\LibraRestaurant.CmskitService.Domain.Shared.csproj", "{75BD221D-EE6C-463B-8380-CF9DBEFFBB47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.EntityFrameworkCore", "..\src\LibraRestaurant.CmskitService.EntityFrameworkCore\LibraRestaurant.CmskitService.EntityFrameworkCore.csproj", "{245615D1-B27C-436B-8FC6-6CA8CA7C1453}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.HttpApi", "..\src\LibraRestaurant.CmskitService.HttpApi\LibraRestaurant.CmskitService.HttpApi.csproj", "{EB6277AF-7C39-4891-B36D-A6FE11D67584}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.HttpApi.Client", "..\src\LibraRestaurant.CmskitService.HttpApi.Client\LibraRestaurant.CmskitService.HttpApi.Client.csproj", "{EDD3671F-A061-4FB1-8412-EEDABE76BBB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.CmskitService.HttpApi.Host", "..\src\LibraRestaurant.CmskitService.HttpApi.Host\LibraRestaurant.CmskitService.HttpApi.Host.csproj", "{2977B470-0507-48ED-BB78-5CF10900D9B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E9E3695-4AD8-4D7C-82AA-C8DB3F9E0AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9E3695-4AD8-4D7C-82AA-C8DB3F9E0AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9E3695-4AD8-4D7C-82AA-C8DB3F9E0AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9E3695-4AD8-4D7C-82AA-C8DB3F9E0AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF06398-5F2F-4EFF-A114-645A8D21CF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF06398-5F2F-4EFF-A114-645A8D21CF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF06398-5F2F-4EFF-A114-645A8D21CF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF06398-5F2F-4EFF-A114-645A8D21CF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21180D4D-F80A-4512-AA03-889EA3018744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21180D4D-F80A-4512-AA03-889EA3018744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21180D4D-F80A-4512-AA03-889EA3018744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21180D4D-F80A-4512-AA03-889EA3018744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75BD221D-EE6C-463B-8380-CF9DBEFFBB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75BD221D-EE6C-463B-8380-CF9DBEFFBB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75BD221D-EE6C-463B-8380-CF9DBEFFBB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75BD221D-EE6C-463B-8380-CF9DBEFFBB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245615D1-B27C-436B-8FC6-6CA8CA7C1453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245615D1-B27C-436B-8FC6-6CA8CA7C1453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245615D1-B27C-436B-8FC6-6CA8CA7C1453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245615D1-B27C-436B-8FC6-6CA8CA7C1453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6277AF-7C39-4891-B36D-A6FE11D67584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6277AF-7C39-4891-B36D-A6FE11D67584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6277AF-7C39-4891-B36D-A6FE11D67584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6277AF-7C39-4891-B36D-A6FE11D67584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD3671F-A061-4FB1-8412-EEDABE76BBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD3671F-A061-4FB1-8412-EEDABE76BBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD3671F-A061-4FB1-8412-EEDABE76BBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD3671F-A061-4FB1-8412-EEDABE76BBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2977B470-0507-48ED-BB78-5CF10900D9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2977B470-0507-48ED-BB78-5CF10900D9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2977B470-0507-48ED-BB78-5CF10900D9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2977B470-0507-48ED-BB78-5CF10900D9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {226DE4C8-3CC8-4362-B86A-985006F5CC67}
+	EndGlobalSection
+EndGlobal

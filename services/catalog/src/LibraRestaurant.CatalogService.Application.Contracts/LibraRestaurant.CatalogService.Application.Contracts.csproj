@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Core" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraRestaurant.CatalogService.Domain.Shared\LibraRestaurant.CatalogService.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

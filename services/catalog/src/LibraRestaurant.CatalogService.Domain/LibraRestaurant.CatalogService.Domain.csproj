@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ordering\src\LibraRestaurant.OrderingService.Domain.Shared\LibraRestaurant.OrderingService.Domain.Shared.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.CatalogService.Domain.Shared\LibraRestaurant.CatalogService.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

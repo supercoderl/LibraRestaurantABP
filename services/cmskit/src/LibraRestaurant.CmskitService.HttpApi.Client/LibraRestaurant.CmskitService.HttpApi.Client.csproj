@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="8.2.0" />
+    <PackageReference Include="Volo.CmsKit.HttpApi.Client" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraRestaurant.CmskitService.Application.Contracts\LibraRestaurant.CmskitService.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

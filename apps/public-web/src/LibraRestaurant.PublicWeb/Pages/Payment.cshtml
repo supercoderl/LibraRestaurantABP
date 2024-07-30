@@ -1,0 +1,17 @@
+﻿@page
+@using LibraRestaurant.Localization
+@using LibraRestaurant.PublicWeb.Components.Payment
+@using Microsoft.Extensions.Localization
+@model LibraRestaurant.PublicWeb.Pages.PaymentModel
+
+@inject IStringLocalizer<LibraRestaurantResource> L
+
+@section scripts {
+    <abp-script src="/Pages/payment.js"/>
+}
+
+<div class="row">
+    <div id="PaymentArea">
+        @await Component.InvokeAsync(typeof(PaymentWidgetViewComponent))
+    </div>
+</div>

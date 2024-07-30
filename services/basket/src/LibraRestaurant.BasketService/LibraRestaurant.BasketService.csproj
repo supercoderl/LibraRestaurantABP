@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.27.2" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.65.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.65.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="8.1.0" />
+    <PackageReference Include="Serilog" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Caching" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Http.Client" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\aspire\ServiceDefaults\ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\LibraRestaurant.Shared.Hosting.AspNetCore\LibraRestaurant.Shared.Hosting.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\LibraRestaurant.Shared.Hosting.Microservices\LibraRestaurant.Shared.Hosting.Microservices.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.BasketService.Contracts\LibraRestaurant.BasketService.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\..\catalog\src\LibraRestaurant.CatalogService.Application\Protos\product.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraRestaurant.Shared.Hosting.AspNetCore", "LibraRestaurant.Shared.Hosting.AspNetCore.csproj", "{0B5EEA01-A504-4865-861C-4298FC1FBC9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B5EEA01-A504-4865-861C-4298FC1FBC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5EEA01-A504-4865-861C-4298FC1FBC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5EEA01-A504-4865-861C-4298FC1FBC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5EEA01-A504-4865-861C-4298FC1FBC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F32587D-660E-4592-8F6B-3C7ED0846EB3}
+	EndGlobalSection
+EndGlobal

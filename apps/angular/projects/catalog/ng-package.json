@@ -1,0 +1,6 @@
+{
+  "dest": "../../dist/catalog/config",
+  "lib": {
+    "entryFile": "config/src/public-api.ts"
+  }
+}

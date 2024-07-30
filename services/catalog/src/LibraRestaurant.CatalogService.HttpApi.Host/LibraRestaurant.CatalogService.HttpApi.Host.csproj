@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.64.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\aspire\ServiceDefaults\ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\LibraRestaurant.Shared.Hosting.Microservices\LibraRestaurant.Shared.Hosting.Microservices.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.CatalogService.Application\LibraRestaurant.CatalogService.Application.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.CatalogService.HttpApi\LibraRestaurant.CatalogService.HttpApi.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.CatalogService.MongoDB\LibraRestaurant.CatalogService.MongoDB.csproj" />
+  </ItemGroup>
+
+</Project>

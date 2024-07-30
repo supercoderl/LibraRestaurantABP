@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+    <PackageReference Include="Serilog" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Volo.Abp.Core" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.2.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\LibraRestaurant.Shared.Hosting.AspNetCore\LibraRestaurant.Shared.Hosting.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\shared\LibraRestaurant.Shared.Hosting.Microservices\LibraRestaurant.Shared.Hosting.Microservices.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.AdministrationService.Application\LibraRestaurant.AdministrationService.Application.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.AdministrationService.EntityFrameworkCore\LibraRestaurant.AdministrationService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\LibraRestaurant.AdministrationService.HttpApi\LibraRestaurant.AdministrationService.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>

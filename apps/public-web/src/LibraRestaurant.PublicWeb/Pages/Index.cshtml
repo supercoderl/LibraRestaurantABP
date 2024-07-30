@@ -1,0 +1,80 @@
+﻿@page
+@using LibraRestaurant.Localization
+@using Microsoft.Extensions.Localization
+@using System.Globalization
+@model LibraRestaurant.PublicWeb.Pages.IndexModel
+@inject IStringLocalizer<LibraRestaurantResource> L
+
+@{
+    string pageHeader = L["OurProducts"];
+}
+
+@section styles{
+    <abp-style src="/Pages/index.css"/>
+}
+
+@section scripts {
+    <abp-script src="/client-proxies/basket-proxy.js"/>
+    <abp-script src="/Pages/index.js"/>
+}
+
+@if (Model.HasRemoteServiceError)
+{
+    pageHeader = L["CatalogServiceNotAvailable"];
+}
+
+<div class="container">
+    <h3 class="pb-4 text-center">@pageHeader</h3>
+    <div class="">
+        <div class="product-list">
+            @foreach (var product in Model.Products)
+            {
+                var productPrice = product.Price.ToString("C", new CultureInfo("en-US"));
+                string productImage = !product.ImageName.IsNullOrEmpty() ? $"product-images/{product.ImageName}" : $"product-images/@product.ImageName";
+                string buyText = L["Index:AddToBasket"];
+                <div class="product-container">
+                    <div class="product-list-item" data-product-id="@product.Id.ToString()">
+                        <div class="item-link" href="/products/@product.Id.ToString()" data-product-id="@product.Id.ToString()">
+                            <div class="product-title">
+                                <span>
+                                    <h6>@product.Name</h6>
+                                    <span class="d-block text-muted">@product.Code</span>
+                                </span>
+                            </div>
+                            @* Need read-only ratings system *@
+                            @* <div class="product-ratings"> *@
+                            @*     @if (GlobalFeatureManager.Instance.IsEnabled<RatingsFeature>()) *@
+                            @*     { *@
+                            @*         @await Component.InvokeAsync(typeof(RatingViewComponent), new { entityType = "quote", entityId = @product.Id.ToString() }) *@
+                            @*     } *@
+                            @* </div> *@
+                            <div class="product-image">
+                                <img src="@productImage" loading="lazy"/>
+                            </div>
+                            <div class="product-count">
+                                <span class="d-block">@L["StockCount"]: @product.StockCount</span>
+                            </div>
+                        </div>
+                        <div class="product-item-bottom">
+                            <div class="item-added">
+                                <div class="fa fa-check" style="color: yellowgreen; padding-right: 1em;"></div>
+                                <span style="display: flex">Added to cart</span>
+                            </div>
+                            @if (product.StockCount > 0)
+                            {
+                                <abp-button class="add-basket-button" button-type="Warning" text="@buyText" data-product-id="@product.Id.ToString()"></abp-button>
+                            }
+                            else
+                            {
+                                <abp-button disabled="true" class="add-basket-button" button-type="Warning" text="@L["Index:OutOfStock"]"/>
+                            }
+                            <div class="info-section col">
+                                <span class="product-price">@productPrice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

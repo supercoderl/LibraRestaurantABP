@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.Application", "LibraRestaurant.AdministrationService.Application\LibraRestaurant.AdministrationService.Application.csproj", "{E12B4D05-2EAA-45A6-8CEF-E1218DF5072B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.Application.Contracts", "LibraRestaurant.AdministrationService.Application.Contracts\LibraRestaurant.AdministrationService.Application.Contracts.csproj", "{77DB538E-8626-4FB8-93C9-F565148FBB65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.Domain", "LibraRestaurant.AdministrationService.Domain\LibraRestaurant.AdministrationService.Domain.csproj", "{44227901-9366-48F1-95DF-602DDDEEA407}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.Domain.Shared", "LibraRestaurant.AdministrationService.Domain.Shared\LibraRestaurant.AdministrationService.Domain.Shared.csproj", "{A579A136-2CEC-49EA-B8B3-EBDE065A45BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.EntityFrameworkCore", "LibraRestaurant.AdministrationService.EntityFrameworkCore\LibraRestaurant.AdministrationService.EntityFrameworkCore.csproj", "{FE0DC61B-A9AB-45F7-B103-E94F3504F704}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.HttpApi", "LibraRestaurant.AdministrationService.HttpApi\LibraRestaurant.AdministrationService.HttpApi.csproj", "{42AA9570-C12C-4DF4-9C0A-4463DF250133}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.HttpApi.Client", "LibraRestaurant.AdministrationService.HttpApi.Client\LibraRestaurant.AdministrationService.HttpApi.Client.csproj", "{9D5646A7-D966-4834-A8C7-AF620E735BFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraRestaurant.AdministrationService.HttpApi.Host", "LibraRestaurant.AdministrationService.HttpApi.Host\LibraRestaurant.AdministrationService.HttpApi.Host.csproj", "{9D30D0E6-1645-4AEE-A402-C20E776FBD0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E12B4D05-2EAA-45A6-8CEF-E1218DF5072B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12B4D05-2EAA-45A6-8CEF-E1218DF5072B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12B4D05-2EAA-45A6-8CEF-E1218DF5072B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12B4D05-2EAA-45A6-8CEF-E1218DF5072B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DB538E-8626-4FB8-93C9-F565148FBB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DB538E-8626-4FB8-93C9-F565148FBB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DB538E-8626-4FB8-93C9-F565148FBB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DB538E-8626-4FB8-93C9-F565148FBB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44227901-9366-48F1-95DF-602DDDEEA407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44227901-9366-48F1-95DF-602DDDEEA407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44227901-9366-48F1-95DF-602DDDEEA407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44227901-9366-48F1-95DF-602DDDEEA407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A579A136-2CEC-49EA-B8B3-EBDE065A45BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A579A136-2CEC-49EA-B8B3-EBDE065A45BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A579A136-2CEC-49EA-B8B3-EBDE065A45BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A579A136-2CEC-49EA-B8B3-EBDE065A45BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0DC61B-A9AB-45F7-B103-E94F3504F704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0DC61B-A9AB-45F7-B103-E94F3504F704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0DC61B-A9AB-45F7-B103-E94F3504F704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0DC61B-A9AB-45F7-B103-E94F3504F704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42AA9570-C12C-4DF4-9C0A-4463DF250133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42AA9570-C12C-4DF4-9C0A-4463DF250133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42AA9570-C12C-4DF4-9C0A-4463DF250133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42AA9570-C12C-4DF4-9C0A-4463DF250133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D5646A7-D966-4834-A8C7-AF620E735BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5646A7-D966-4834-A8C7-AF620E735BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5646A7-D966-4834-A8C7-AF620E735BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5646A7-D966-4834-A8C7-AF620E735BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D30D0E6-1645-4AEE-A402-C20E776FBD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D30D0E6-1645-4AEE-A402-C20E776FBD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D30D0E6-1645-4AEE-A402-C20E776FBD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D30D0E6-1645-4AEE-A402-C20E776FBD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A422A6C9-8626-453F-93D3-09884973480D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsAspireHost>true</IsAspireHost>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\apps\public-web\src\LibraRestaurant.PublicWeb\LibraRestaurant.PublicWeb.csproj" />
+    <ProjectReference Include="..\..\gateways\web-public\src\LibraRestaurant.WebPublicGateway\LibraRestaurant.WebPublicGateway.csproj" />
+    <ProjectReference Include="..\..\gateways\web\src\LibraRestaurant.WebGateway\LibraRestaurant.WebGateway.csproj" />
+    <ProjectReference Include="..\..\services\administration\LibraRestaurant.AdministrationService.HttpApi.Host\LibraRestaurant.AdministrationService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\services\basket\src\LibraRestaurant.BasketService\LibraRestaurant.BasketService.csproj" />
+    <ProjectReference Include="..\..\services\catalog\src\LibraRestaurant.CatalogService.HttpApi.Host\LibraRestaurant.CatalogService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\services\cmskit\src\LibraRestaurant.CmskitService.HttpApi.Host\LibraRestaurant.CmskitService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\services\identity\LibraRestaurant.IdentityService.HttpApi.Host\LibraRestaurant.IdentityService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\services\ordering\src\LibraRestaurant.OrderingService.HttpApi.Host\LibraRestaurant.OrderingService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\services\payment\src\LibraRestaurant.PaymentService.HttpApi.Host\LibraRestaurant.PaymentService.HttpApi.Host.csproj" />
+    <ProjectReference Include="..\..\shared\LibraRestaurant.Keycloak.DbMigrator\LibraRestaurant.Keycloak.DbMigrator.csproj" />
+  </ItemGroup>
+
+</Project>
